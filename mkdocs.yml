@@ -10,8 +10,8 @@ theme:
 nav:
   - Home: index.md
   - Tutorials:
-      - Linux Commands: tutorials/linux.md
-      - Bioinformatics: tutorials/bioinfo.md
+      - Linux Commands: tutorials/01-linux.md
+      - Bioinformatics: tutorials/02-bioinfo.md
 
 markdown_extensions:
   - admonition
