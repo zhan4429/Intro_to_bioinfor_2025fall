@@ -33,8 +33,8 @@ srun -N1 -n2 -t2:00:00 --pty bash ## You will start an interactive session with 
 
 ### Open OnDemand
 
-- Old Open OnDemand: https://ondemand-pax.pax.tufts.edu
-- New Open OnDemand: https://ondemand-prod.pax.tufts.edu
+- Old Open OnDemand: [https://ondemand-pax.pax.tufts.edu](https://ondemand-pax.pax.tufts.edu)
+- New Open OnDemand: [https://ondemand-prod.pax.tufts.edu](https://ondemand-prod.pax.tufts.edu)
 
 ## Agenda
 
@@ -43,7 +43,7 @@ srun -N1 -n2 -t2:00:00 --pty bash ## You will start an interactive session with 
 
 <div style="border-left: 4px solid #007acc; padding: 0.5em 1em; background: #f0f8ff;">
 <strong>Note:</strong> Users do not have access to the new cluster and new Open OnDemand by default.  
-To apply for access, you need to join the HPC Upgrade Early Adopter Program.
+To apply for access, you need to join the <a href="https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU" target="_blank">HPC Upgrade Early Adopter Program</a>.
 </div>
 
 ## Recording
