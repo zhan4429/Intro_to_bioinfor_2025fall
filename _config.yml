@@ -8,4 +8,5 @@ relative_links:
   collections: true
 include:
   - README.md
+  - tutorials/
 encoding: UTF-8

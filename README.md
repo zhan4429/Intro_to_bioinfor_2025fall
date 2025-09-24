@@ -18,8 +18,8 @@ If you’re new to HPC, please review our recent [Intro to HPC](https://tufts.zo
 
 ## Agenda  
 
-- [Introduction to the Linux/Unix Command Line](01-linux.md)  
-- [Bioinformatics on the Tufts HPC](02-bioinfo.md)  
+- [Introduction to the Linux/Unix Command Line](tutorials/01-linux.md)  
+- [Bioinformatics on the Tufts HPC](tutorials/02-bioinfo.md)  
 
 ## Recording  
 
