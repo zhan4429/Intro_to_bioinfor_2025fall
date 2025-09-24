@@ -33,7 +33,7 @@ srun -N1 -n2 -t2:00:00 --pty bash ## You will start an interactive session with 
 
 ### Open OnDemand
 
-- Old Open OnDemand: [https://ondemand-pax.pax.tufts.edu](https://ondemand-pax.pax.tufts.edu)
+- Old Open OnDemand: [https://ondemand-pax.pax.tufts.edu](https://ondemand.pax.tufts.edu)
 - New Open OnDemand: [https://ondemand-prod.pax.tufts.edu](https://ondemand-prod.pax.tufts.edu)
 
 ## Agenda
@@ -62,4 +62,4 @@ A recording of this workshop will be made available after the session.
 
 - Best Practices for using GPUs in Jupyter for Data Science Wednesday, October 29, 2025 2:00pm - 3:30pm
 
-More Research Technology Workshops: https://go.tufts.edu/workshops
+More Research Technology Workshops: [https://go.tufts.edu/workshops](https://go.tufts.edu/workshops******)
