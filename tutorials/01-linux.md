@@ -77,7 +77,7 @@ man <command>
 
 ```
 man ls
-
+```
 
 ### File and Directory Management
 
@@ -240,9 +240,7 @@ mv [options] source destination
 ##### Usage
 
 ```
-
 cp [options] source destination
-
 ```
 
 ##### Common option
@@ -264,7 +262,9 @@ rm [options] file/directory
 - **-r:** Deletes recursively any file and subdirectories contained within the given directory.
 
 ### Storage management
+
 #### ncdu: Disk Usage Analyzer for Linux
+
 When your storage space starts running low on an HPC or Linux system, it’s important to figure out which files and folders are using the most space.
 
 `ncdu` stands for **NCurses Disk Usage**, and it provides an interactive, text-based interface for exploring disk usage.
@@ -276,7 +276,9 @@ When your storage space starts running low on an HPC or Linux system, it’s imp
 ncdu [directory]
 
 ```
+
 ##### Example
+
 ```
 
 ncdu ~
@@ -285,10 +287,12 @@ ncdu /cluster/tufts/mylab
 ```
 
 #### df: Check Disk Space in Linux
+
 When working on Linux (especially on shared HPC systems), it’s important to know how much disk space is available on different filesystems.
 The `df` command (disk free) shows this information.
 
 ##### Usage
+
 ```
 
 df -h /cluster/tufts/mylab
@@ -312,9 +316,7 @@ Linux command-line tools are invaluable for bioinformatics text processing due t
 ##### Usage
 
 ```
-
 cat [options] file1 file2 …
-
 ```
 
 ##### Common option
@@ -559,6 +561,8 @@ sort file.txt | uniq
 
 - **[abc]at** matches "bat", "cat", or "aat".
 - **[0-9]** matches any single digit.
+
+```
 
 ```
 
