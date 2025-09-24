@@ -63,6 +63,22 @@ Files are referred to by their location called **path**
 
 ## Must-known Linux/Unix Tools
 
+### man: manual pages
+
+When working on Linux, you don’t need to Google every command — the manual pages (man pages) are built right into the system. The man command shows documentation for most Linux commands and tools.
+
+##### Usage
+
+```
+man <command>
+```
+
+##### Example
+
+```
+man ls
+
+
 ### File and Directory Management
 
 Linux provides powerful tools for managing files and file systems. Here we will introduce a few essential commands.
@@ -72,11 +88,13 @@ Linux provides powerful tools for managing files and file systems. Here we will 
 ##### Usage
 
 ```
+
 $ pwd
 /cluster/home/yzhang85
 $ cd /cluster/tufts/rt/yzhang85/
 $ pwd
 /cluster/tufts/rt/yzhang85
+
 ```
 
 #### cd: change directory
@@ -84,12 +102,15 @@ $ pwd
 ##### Usage
 
 ```
+
 cd [directory]
+
 ```
 
 If a directory is not supplied as an argument, it will default to your **home** directory.
 
 ```
+
 $ pwd
 /cluster/tufts/rt/yzhang85
 $ cd ..
@@ -98,6 +119,7 @@ $ pwd
 $ cd
 $ pwd
 /cluster/home/yzhang85
+
 ```
 
 ##### Shortcuts
@@ -111,7 +133,9 @@ $ pwd
 ##### Usage
 
 ```
+
 ls [options] [directory]
+
 ```
 
 ##### Common options:
@@ -136,10 +160,12 @@ ls [options] [directory]
 ##### Examples
 
 ```
+
 $ chmod g+w filename ## Give the group write permission
 $ chmod u+x filename ## Give user execute permission
 $ chmod a+r filename ## Give all users read access
 $ chmod u=rw,g=r,o=r filename ## Give user read and write permission, group and other only read permission.
+
 ```
 
 ##### Recursive updating permissions with -R
@@ -147,7 +173,9 @@ $ chmod u=rw,g=r,o=r filename ## Give user read and write permission, group and 
 To apply permissions recursively to all files and subdirectories within a directory, use the **-R** option:
 
 ```
+
 $ chmod -R g+rx /path/to/directory
+
 ```
 
 #### touch: create new files or update timestamps
@@ -157,13 +185,17 @@ touch is used to create new files or to update the timestamps (access and modifi
 ##### Create new file
 
 ```
+
 touch newfile.txt
+
 ```
 
 ##### Update timestamps of existing files
 
 ```
+
 touch existingfile.txt
+
 ```
 
 #### mkdir: create new directory
@@ -171,7 +203,9 @@ touch existingfile.txt
 ##### Usage
 
 ```
+
 mkdir [options] dir_name
+
 ```
 
 ##### Common option
@@ -179,7 +213,9 @@ mkdir [options] dir_name
 - **-p**: Creates parent directories if they don't exist.
 
 ```
+
 $ mkdir -p rnaseq/output
+
 ```
 
 This will create `output` folder as well as its parent folder `rnaseq` if it doesn't exist.
@@ -189,7 +225,9 @@ This will create `output` folder as well as its parent folder `rnaseq` if it doe
 ##### Usage
 
 ```
+
 mv [options] source destination
+
 ```
 
 ##### Common option
@@ -202,7 +240,9 @@ mv [options] source destination
 ##### Usage
 
 ```
+
 cp [options] source destination
+
 ```
 
 ##### Common option
@@ -214,12 +254,54 @@ cp [options] source destination
 ##### Usage
 
 ```
+
 rm [options] file/directory
+
 ```
 
 ##### Common option
 
 - **-r:** Deletes recursively any file and subdirectories contained within the given directory.
+
+### Storage management
+#### ncdu: Disk Usage Analyzer for Linux
+When your storage space starts running low on an HPC or Linux system, it’s important to figure out which files and folders are using the most space.
+
+`ncdu` stands for **NCurses Disk Usage**, and it provides an interactive, text-based interface for exploring disk usage.
+
+##### Usage
+
+```
+
+ncdu [directory]
+
+```
+##### Example
+```
+
+ncdu ~
+ncdu /cluster/tufts/mylab
+
+```
+
+#### df: Check Disk Space in Linux
+When working on Linux (especially on shared HPC systems), it’s important to know how much disk space is available on different filesystems.
+The `df` command (disk free) shows this information.
+
+##### Usage
+```
+
+df -h /cluster/tufts/mylab
+
+```
+
+```
+
+df -h /cluster/tufts/yzhang85
+Filesystem Size Used Avail Use% Mounted on
+10.246.194.77:/projects/yzhang85 1.1T 961G 64G 94% /cluster/tufts/yzhang85
+
+```
 
 ### Text processing
 
@@ -230,7 +312,9 @@ Linux command-line tools are invaluable for bioinformatics text processing due t
 ##### Usage
 
 ```
+
 cat [options] file1 file2 …
+
 ```
 
 ##### Common option
@@ -242,7 +326,9 @@ cat [options] file1 file2 …
 ##### Usage
 
 ```
+
 head/tail [options] file
+
 ```
 
 ##### Common option
@@ -254,8 +340,10 @@ head/tail [options] file
 ##### Usage
 
 ```
+
 less largefile.txt
 more largefile.txt
+
 ```
 
 ##### Navigation with less
@@ -280,7 +368,9 @@ more largefile.txt
 ##### Usage
 
 ```
+
 grep [options] PATTERN file
+
 ```
 
 ##### Common option
@@ -299,31 +389,41 @@ sed (short for stream editor) is a powerful text-processing tool in Bash that al
 Replace the first occurrence of **old** with **new** in each line:
 
 ```
+
 sed 's/old/new/' filename.txt
+
 ```
 
 Replace **all** occurrences of **old** with **new** in each line:
 
 ```
+
 sed 's/old/new/g' filename.txt
+
 ```
 
 ##### In-place substitution
 
 ```
+
 sed -i 's/old/new/g' filename.txt
+
 ```
 
 Warning: Use this command with caution as it directly modifies the original file. To create a backup, use `-i.bak`:
 
 ```
+
 sed -i.bak 's/old/new/g' filename.txt
+
 ```
 
 ##### Delete lines
 
 ```
+
 sed '/pattern/d' filename.txt
+
 ```
 
 ### Data Compression and Archiving
@@ -337,25 +437,33 @@ tar is used to create, extract, and manipulate archive files. However, tar itsel
 ##### Create a .tar archive without compression
 
 ```
+
 tar -cvf archive.tar my_folder
+
 ```
 
 ##### Extract a tar file
 
 ```
+
 tar -xvf archive.tar
+
 ```
 
 ##### Creating a compressed archive(.tar.gz)
 
 ```
+
 tar -cvzf archive.tar.gz my_folder
+
 ```
 
 ##### Extracting a compressed archive(.tar.gz)
 
 ```
+
 tar -xvzf archive.tar.gz
+
 ```
 
 ### Other useful tools
@@ -365,13 +473,17 @@ tar -xvzf archive.tar.gz
 ##### Define variables
 
 ```
-VARIABLE=value    ## No space around =
+
+VARIABLE=value ## No space around =
+
 ```
 
 ##### Variable reference
 
 ```
-$VARIABLE     ## echo $VARIABLE
+
+$VARIABLE ## echo $VARIABLE
+
 ```
 
 ##### Commonly used environment variables
@@ -385,9 +497,11 @@ $VARIABLE     ## echo $VARIABLE
 
 - `>`: Overwrites the contents of a file with the command's output
 
-  ```
-  `cat file1 file2 > files`
-  ```
+```
+
+`cat file1 file2 > files`
+
+```
 
 - `>>`: Appends the output to the end of an existing file
 
@@ -406,11 +520,15 @@ A pipe is represented by the `|` symbol. When you place a pipe between two comma
 ##### Usage
 
 ```
+
 command1 | command2
+
 ```
 
 ```
+
 sort file.txt | uniq
+
 ```
 
 - **sort file.txt**: Sorts the lines in file.txt.
@@ -421,19 +539,27 @@ sort file.txt | uniq
 
 - **\***: Represents zero or more characters:
 
-  ```
-   - **\*.fastq.gz**  matches all fastq.gz files
-  ```
+```
+
+- **\*.fastq.gz** matches all fastq.gz files
+
+```
 
 - **?**: Represents a single character:
 
-  ```
-   - **file?.txt** matches "file1.txt", "fileA.txt", but not "file12.txt".
-  ```
+```
+
+- **file?.txt** matches "file1.txt", "fileA.txt", but not "file12.txt".
+
+```
 
 - **[]**: Represents a single character within a specified range or set:
 
-  ```
-   - **[abc]at** matches "bat", "cat", or "aat".
-   - **[0-9]** matches any single digit.
-  ```
+```
+
+- **[abc]at** matches "bat", "cat", or "aat".
+- **[0-9]** matches any single digit.
+
+```
+
+```
