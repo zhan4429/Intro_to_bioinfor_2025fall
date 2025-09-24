@@ -8,5 +8,4 @@ relative_links:
   collections: true
 include:
   - README.md
-  - hands-on/
 encoding: UTF-8
