@@ -41,9 +41,7 @@ srun -N1 -n2 -t2:00:00 --pty bash ## You will start an interactive session with 
 - [Introduction to the Linux/Unix Command Line](tutorials/01-linux.md)
 - [Bioinformatics on the Tufts HPC](tutorials/02-bioinfo.md)
 
-> [!NOTE]
-> Users do not have access to new cluster and new Open OnDemand by default.
-> To apply for access, you need to join the [HPC Upgrade Early Adopter Program](https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU)
+!!! note Users do not have access to new cluster and new Open OnDemand by default. To apply for access, you need to join the [HPC Upgrade Early Adopter Program](https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU)
 
 ## Recording
 
