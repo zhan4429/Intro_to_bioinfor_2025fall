@@ -173,13 +173,13 @@ touch is used to create new files or to update the timestamps (access and modifi
 ##### Create new file
 
 ```
-touch newfile.txt
+$ touch newfile.txt
 ```
 
 ##### Update timestamps of existing files
 
 ```
-touch existingfile.txt
+$ touch existingfile.txt
 ```
 
 #### mkdir: create new directory
@@ -254,8 +254,8 @@ ncdu [directory]
 ##### Example
 
 ```
-ncdu ~
-ncdu /cluster/tufts/mylab
+$ ncdu ~
+$ ncdu /cluster/tufts/mylab
 ```
 
 #### df: Check Disk Space in Linux
@@ -266,11 +266,11 @@ The `df` command (disk free) shows this information.
 ##### Usage
 
 ```
-df -h /cluster/tufts/mylab
+$ df -h /cluster/tufts/mylab
 ```
 
 ```
-df -h /cluster/tufts/yzhang85
+$ df -h /cluster/tufts/yzhang85
 Filesystem Size Used Avail Use% Mounted on
 10.246.194.77:/projects/yzhang85 1.1T 961G 64G 94% /cluster/tufts/yzhang85
 ```
@@ -308,8 +308,8 @@ head/tail [options] file
 ##### Usage
 
 ```
-less largefile.txt
-more largefile.txt
+$ less largefile.txt
+$ more largefile.txt
 ```
 
 ##### Navigation with less
@@ -440,7 +440,7 @@ $VARIABLE ## echo $VARIABLE
 - `>`: Overwrites the contents of a file with the command's output
 
 ```
-cat file1 file2 > files
+$ cat file1 file2 > files
 ```
 
 - `>>`: Appends the output to the end of an existing file
@@ -464,7 +464,7 @@ command1 | command2
 ```
 
 ```
-sort file.txt | uniq
+$ sort file.txt | uniq
 ```
 
 - **sort file.txt**: Sorts the lines in file.txt.
