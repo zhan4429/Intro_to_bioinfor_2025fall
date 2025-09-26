@@ -1,35 +1,35 @@
 h1 {
   color: #3287a8;
-  font-size: 4rem;
+  font-size: 3rem;
+  text-decoration: none;
 }
 h2 {
   color: #a86b32;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 h3 {
   color: yellowgreen;
-  font-size: 3rem;
+  font-size: 2.25rem;
 }
 
 h4 {
-    color: lightskyblue
-    font-size: 2.5rem;
+  color: lightskyblue;
+  font-size: 2rem;
 }
 
 h5 {
   color: black;
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
-
 
 table {
   width: 60%;
+  margin: 30px 20px;
   text-align: left;
 }
 
-
 th {
-    font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 body {

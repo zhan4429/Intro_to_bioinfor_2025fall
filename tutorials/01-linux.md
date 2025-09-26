@@ -1,8 +1,8 @@
-# What is Linux?
+## What is Linux?
 
 Linux is a free, open-source, and Unix-like operating system kernel that was originally created by **Linus Torvalds** in 1991. Over time, Linux has grown into a full-fledged operating system used worldwide across various types of devices, from servers and desktop computers to smartphones and embedded systems.
 
-## Popular Linux Distributions
+### Popular Linux Distributions
 
 ​ • **Ubuntu:** A user-friendly distribution popular for desktop and server use, based on Debian.
 
@@ -18,7 +18,7 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 <img src="https://nixwindows.wordpress.com/wp-content/uploads/2015/02/linux-distro-stickers.png" width="800">
 
-### Our clusters' OS
+#### Our clusters' OS
 
 <img src="img/os.png" alt="OS upgrade" width=800>
 
@@ -63,10 +63,10 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
     </tr>
   </tbody>
 </table>
+</hr>
+### Files and File System
 
-## Files and File System
-
-### Everything is a file
+#### Everything is a file
 
 **A file is an addressable location that contains some data which can take many forms.**
 
@@ -89,11 +89,11 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
   1. Execute x
   1. no permission -
 
-### File permissions
+#### File permissions
 
 <img src="https://i.imgur.com/yxNrpKJ.png" width="800">
 
-### File organization
+#### File organization
 
 Everything is mounted to the root directory
 
@@ -103,31 +103,31 @@ Files are referred to by their location called **path**
 
 - Relative Path (From my current location)：**user01**
 
-## Must-known Linux/Unix Tools
+### Must-known Linux/Unix Tools
 
-### man: manual pages
+#### man: manual pages
 
 When working on Linux, you don’t need to Google every command — the manual pages (man pages) are built right into the system. The man command shows documentation for most Linux commands and tools.
 
-##### Usage
+###### Usage
 
 ```
 man <command>
 ```
 
-##### Example
+###### Example
 
 ```
 man ls
 ```
 
-### File and Directory Management
+#### File and Directory Management
 
 Linux provides powerful tools for managing files and file systems. Here we will introduce a few essential commands.
 
-#### pwd: print the current working directory
+##### pwd: print the current working directory
 
-##### Usage
+###### Usage
 
 ```
 $ pwd
@@ -137,9 +137,9 @@ $ pwd
 /cluster/tufts/rt/yzhang85
 ```
 
-#### cd: change directory
+##### cd: change directory
 
-##### Usage
+###### Usage
 
 ```
 cd [directory]
@@ -158,30 +158,30 @@ $ pwd
 /cluster/home/yzhang85
 ```
 
-##### Shortcuts
+###### Shortcuts
 
 - **..**: cd to the parent directory. **cd ..**
 - **~**: cd to the home directory. **cd ~**
 - **-**: cd to the previous directory. **cd -**
 
-#### ls: list all the files in the given directory
+##### ls: list all the files in the given directory
 
-##### Usage
+###### Usage
 
 ```
 ls [options] [directory]
 ```
 
-##### Common options:
+###### Common options:
 
 - **-1**: list each file/directory on a separate line
 - **-l**: lists files/directories with their most common metadata
 - **-a**: include hidden files /directories (files’ name begins with a dot **.**)
 - **-h**: print size of files/directories in human readable format
 
-#### chmod: manage file permissions
+##### chmod: manage file permissions
 
-##### Symbolic Notation
+###### Symbolic Notation
 
 - **u**: user (owner)
 - **g**: group
@@ -191,7 +191,7 @@ ls [options] [directory]
 - **-**: remove permission
 - **=**: set exact permission
 
-##### Examples
+###### Examples
 
 ```
 $ chmod g+w filename ## Give the group write permission
@@ -200,7 +200,7 @@ $ chmod a+r filename ## Give all users read access
 $ chmod u=rw,g=r,o=r filename ## Give user read and write permission, group and other only read permission.
 ```
 
-##### Recursive updating permissions with -R
+###### Recursive updating permissions with -R
 
 To apply permissions recursively to all files and subdirectories within a directory, use the **-R** option:
 
@@ -208,31 +208,31 @@ To apply permissions recursively to all files and subdirectories within a direct
 $ chmod -R g+rx /path/to/directory
 ```
 
-#### touch: create new files or update timestamps
+##### touch: create new files or update timestamps
 
 touch is used to create new files or to update the timestamps (access and modification times) of existing files.
 
-##### Create new file
+###### Create new file
 
 ```
 $ touch newfile.txt
 ```
 
-##### Update timestamps of existing files
+###### Update timestamps of existing files
 
 ```
 $ touch existingfile.txt
 ```
 
-#### mkdir: create new directory
+##### mkdir: create new directory
 
-##### Usage
+###### Usage
 
 ```
 mkdir [options] dir_name
 ```
 
-##### Common option
+###### Common option
 
 - **-p**: Creates parent directories if they don't exist.
 
@@ -242,58 +242,58 @@ $ mkdir -p rnaseq/output
 
 This will create `output` folder as well as its parent folder `rnaseq` if it doesn't exist.
 
-#### mv: move a file/directory to a new location or rename it
+##### mv: move a file/directory to a new location or rename it
 
-##### Usage
+###### Usage
 
 ```
 mv [options] source destination
 ```
 
-##### Common option
+###### Common option
 
 - **-i**: Prompts for confirmation before overwriting an existing file. Useful to avoid accidental data loss.
 - **-f**: Forces the operation without prompting, even if an existing file would be overwritten. **Use with caution**!
 
-#### cp: copy a file/directory
+##### cp: copy a file/directory
 
-##### Usage
+###### Usage
 
 ```
 cp [options] source destination
 ```
 
-##### Common option
+###### Common option
 
 - **-r**: To copy directory
 
-#### rm: remove files/directories
+##### rm: remove files/directories
 
-##### Usage
+###### Usage
 
 ```
 rm [options] file/directory
 ```
 
-##### Common option
+###### Common option
 
 - **-r:** Deletes recursively any file and subdirectories contained within the given directory.
 
-### Storage management
+#### Storage management
 
-#### ncdu: disk usage analyzer
+##### ncdu: disk usage analyzer
 
 When your storage space starts running low on an HPC or Linux system, it’s important to figure out which files and folders are using the most space.
 
 `ncdu` stands for **NCurses Disk Usage**, and it provides an interactive, text-based interface for exploring disk usage.
 
-##### Usage
+###### Usage
 
 ```
 ncdu [directory]
 ```
 
-##### Example
+###### Example
 
 ```
 $ ncdu ~
@@ -302,12 +302,12 @@ $ ncdu /cluster/tufts/mylab
 
 <img src="img/ncdu.png" width="600">
 
-#### df: check disk space
+##### df: check disk space
 
 When working on Linux (especially on shared HPC systems), it’s important to know how much disk space is available on different filesystems.
 The `df` command (disk free) shows this information.
 
-##### Usage
+###### Usage
 
 ```
 $ df -h /cluster/tufts/mylab
@@ -319,44 +319,44 @@ Filesystem Size Used Avail Use% Mounted on
 10.246.194.77:/projects/yzhang85 1.1T 961G 64G 94% /cluster/tufts/yzhang85
 ```
 
-### Text processing
+#### Text processing
 
 Linux command-line tools are invaluable for bioinformatics text processing due to their efficiency and flexibility. They allow for rapid manipulation and analysis of large biological datasets, such as DNA sequences, protein structures, and gene expression data. Commands like `grep`, `sed`, `awk`, and `cut` are essential for filtering, extracting, and reformatting text-based biological information.
 
-#### cat: catenate files(joins their contents)
+##### cat: catenate files(joins their contents)
 
-##### Usage
+###### Usage
 
 ```
 cat [options] file1 file2 …
 ```
 
-##### Common option
+###### Common option
 
 - **-n:** tells cat to **number each line of the output**. This is helpful for debugging scripts.
 
-#### head/tail: display the beginning/end of a file
+##### head/tail: display the beginning/end of a file
 
-##### Usage
+###### Usage
 
 ```
 head/tail [options] file
 ```
 
-##### Common option
+###### Common option
 
 - **-n** \[number\]: Specifies the number of lines to display (default: 10).
 
-#### less/more: view the content of a file page by page
+##### less/more: view the content of a file page by page
 
-##### Usage
+###### Usage
 
 ```
 $ less largefile.txt
 $ more largefile.txt
 ```
 
-##### Navigation with less
+###### Navigation with less
 
 - **Arrow Keys**: Use the up and down arrow keys to scroll line by line.
 - **Spacebar**: Move forward one page.
@@ -366,33 +366,33 @@ $ more largefile.txt
 - **g**: Go to the beginning of the file.
 - **G**: Go to the end of the file.
 
-##### Navigation with more
+###### Navigation with more
 
 - **Spacebar**: Move forward one page.
 - **Enter**: Move forward one line.
 - **q**: Quit and exit more.
 - **/search_term**: Search for search_term within the file (forward only).
 
-#### grep:Extracting lines matching (not matching) a pattern
+##### grep:Extracting lines matching (not matching) a pattern
 
-##### Usage
+###### Usage
 
 ```
 grep [options] PATTERN file
 ```
 
-##### Common option
+###### Common option
 
 - **-i**: ignore cases
 - **-v**: select non-matching lines.
 - **-A NUM:** Print **NUM** lines of trailing context after matching lines.
 - **-B NUM:** Print **NUM** lines of leading context before matching lines.
 
-#### sed: Stream editor for modifying file content
+##### sed: Stream editor for modifying file content
 
 sed (short for stream editor) is a powerful text-processing tool in Bash that allows you to parse and transform text in files or streams. It is commonly used to perform basic text manipulations like search and replace, insert and delete lines, and apply regular expressions on text data.
 
-##### Substitution (Search and Replace)
+###### Substitution (Search and Replace)
 
 Replace the first occurrence of **old** with **new** in each line:
 
@@ -406,7 +406,7 @@ Replace **all** occurrences of **old** with **new** in each line:
 sed 's/old/new/g' filename.txt
 ```
 
-##### In-place substitution
+###### In-place substitution
 
 ```
 sed -i 's/old/new/g' filename.txt
@@ -418,68 +418,68 @@ Warning: Use this command with caution as it directly modifies the original file
 sed -i.bak 's/old/new/g' filename.txt
 ```
 
-##### Delete lines
+###### Delete lines
 
 ```
 sed '/pattern/d' filename.txt
 ```
 
-### Data Compression and Archiving
+#### Data Compression and Archiving
 
 When working with files on Linux, compressing them to save space and bundling multiple files into a single archive is a common practice. The commands gzip, gunzip, and tar are essential tools for file compression and archiving in Bash.
 
-#### tar: Archive multiple files into one or extract them.
+##### tar: Archive multiple files into one or extract them.
 
 tar is used to create, extract, and manipulate archive files. However, tar itself does not compress files; it only archives them by combining multiple files and directories into a single file. This file usually has a `.tar` extension. However, tar can be used in combination with other compression utilities (like `gzip` or `bzip2`) to compress the archive.
 
-##### Create a .tar archive without compression
+###### Create a .tar archive without compression
 
 ```
 tar -cvf archive.tar my_folder
 ```
 
-##### Extract a tar file
+###### Extract a tar file
 
 ```
 tar -xvf archive.tar
 ```
 
-##### Creating a compressed archive(.tar.gz)
+###### Creating a compressed archive(.tar.gz)
 
 ```
 tar -cvzf archive.tar.gz my_folder
 ```
 
-##### Extracting a compressed archive(.tar.gz)
+###### Extracting a compressed archive(.tar.gz)
 
 ```
 tar -xvzf archive.tar.gz
 ```
 
-### Other useful tools
+#### Other useful tools
 
-#### Environment variables
+##### Environment variables
 
-##### Define variables
+###### Define variables
 
 ```
 VARIABLE=value ## No space around =
 ```
 
-##### Variable reference
+###### Variable reference
 
 ```
 $VARIABLE ## echo $VARIABLE
 ```
 
-##### Commonly used environment variables
+###### Commonly used environment variables
 
 - **\$USER**: the login user
 - **\$HOME**: the home directory
 - **\$PWD**: the current directory
 - **\$PATH**: A list of directories which will be checked for executable files
 
-#### Redirection: >, >>, \<
+##### Redirection: >, >>, \<
 
 - `>`: Overwrites the contents of a file with the command's output
 
@@ -495,13 +495,13 @@ $ cat file1 file2 > files
 
 ​ `sort < names.txt`
 
-#### Pipe: |
+##### Pipe: |
 
 Pipes in Linux are a powerful feature that allows you to connect the output of one command directly as the input to another command. This is a key concept in Unix/Linux philosophy, which promotes the use of small, modular tools that can be combined to perform complex tasks.
 
 A pipe is represented by the `|` symbol. When you place a pipe between two commands, the standard output (`stdout`) of the command on the left of the pipe becomes the standard input (`stdin`) for the command on the right.
 
-##### Usage
+###### Usage
 
 ```
 command1 | command2
@@ -515,7 +515,7 @@ $ sort file.txt | uniq
 
 - **uniq**: Removes duplicate lines from the sorted output.
 
-#### Wildcards: selecting multiple files/directories based on patterns
+##### Wildcards: selecting multiple files/directories based on patterns
 
 - **\***: Represents zero or more characters:
 
