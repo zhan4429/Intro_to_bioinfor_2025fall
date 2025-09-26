@@ -1,3 +1,7 @@
+**Author:** Yucheng Zhang, [yucheng.zhang@tufts.edu](mailto:yucheng.zhang@tufts.edu)
+
+Date: 10/02/2025
+
 ## What is Linux?
 
 <div style="overflow: auto;">
@@ -116,7 +120,7 @@
   </div>
 
   <div style="flex: 1; text-align: center;">
-    <img src="https://i.imgur.com/yxNrpKJ.png" width="100%" style="max-width: 1000px;">
+    <img src="https://i.imgur.com/yxNrpKJ.png" width="120%" style="max-width: 1000px;">
   </div>
 </div>
 
