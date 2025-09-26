@@ -42,23 +42,24 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
       <td>Free and open-source, no subscription required</td>
     </tr>
     <tr>
-          <td><strong>Support</strong></td>
+      <td><strong>Support</strong></td>
       <td>Paid enterprise support from Red Hat</td>
       <td>Community support</td>
-            <tr>
-          <td><strong>Security</strong></td>
-      <td> Certified security patches</td>
-      <td> Security patches synced from RHEL sources</td>
     </tr>
-                <tr>
-          <td><strong>Ecosystem</strong></td>
-      <td> Widely certified by software/hardware vendors</td>
-      <td> Not officially certified, but works with same ecosystem </td>
+    <tr>
+      <td><strong>Security</strong></td>
+      <td>Certified security patches</td>
+      <td>Security patches synced from RHEL sources</td>
     </tr>
-                    <tr>
-          <td><strong>Cost</strong></td>
-      <td> Paid subscription</td>
-      <td> Free; optional paid support available   </td>
+    <tr>
+      <td><strong>Ecosystem</strong></td>
+      <td>Widely certified by software/hardware vendors</td>
+      <td>Not officially certified, but works with same ecosystem</td>
+    </tr>
+    <tr>
+      <td><strong>Cost</strong></td>
+      <td>Paid subscription</td>
+      <td>Free; optional paid support available</td>
     </tr>
   </tbody>
 </table>
