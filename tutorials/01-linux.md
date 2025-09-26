@@ -63,7 +63,7 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
     </tr>
   </tbody>
 </table>
-</hr>
+<hr>
 ### Files and File System
 
 #### Everything is a file

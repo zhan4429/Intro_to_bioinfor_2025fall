@@ -3,6 +3,12 @@ h1 {
   font-size: 3rem;
   text-decoration: none;
 }
+
+h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
 h2 {
   color: #a86b32;
   font-size: 2.5rem;
@@ -26,10 +32,19 @@ table {
   width: 60%;
   margin: 30px 20px;
   text-align: left;
+  border-collapse: separate;
+  border-spacing: 20px 0;
 }
 
 th {
   font-size: 1.75rem;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
 }
 
 body {
