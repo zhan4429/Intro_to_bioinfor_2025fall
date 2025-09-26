@@ -1,8 +1,5 @@
 # What is Linux?
 
-\* TOC
-{:toc}
-
 Linux is a free, open-source, and Unix-like operating system kernel that was originally created by **Linus Torvalds** in 1991. Over time, Linux has grown into a full-fledged operating system used worldwide across various types of devices, from servers and desktop computers to smartphones and embedded systems.
 
 ## Popular Linux Distributions
@@ -19,24 +16,54 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 ​ • **Kali Linux:** A distribution designed for penetration testing and security research.
 
-<img src="https://nixwindows.wordpress.com/wp-content/uploads/2015/02/linux-distro-stickers.png" width="600">
+<img src="https://nixwindows.wordpress.com/wp-content/uploads/2015/02/linux-distro-stickers.png" width="800">
 
 ### Our clusters' OS
 
 <img src="img/os.png" alt="OS upgrade" width=800>
 
-| Feature                       | Red Hat Enterprise Linux (RHEL)                                                      | Rocky Linux                                                                     |
-| ----------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
-| **Origin**                    | Developed and maintained by **Red Hat (IBM-owned)**                                  | Community-driven rebuild, founded by **Gregory Kurtzer** (co-founder of CentOS) |
-| **License**                   | Commercial, subscription required for updates & support                              | Free and open-source, no subscription required                                  |
-| **Support**                   | Paid enterprise support from Red Hat                                                 | Community support; optional commercial support via CIQ and others               |
-| **Updates & Patches**         | Delivered via Red Hat Customer Portal                                                | Binary-compatible rebuild of RHEL updates, released shortly after RHEL          |
-| **Stability**                 | Enterprise-grade, tested extensively                                                 | Same stability as RHEL (binary-compatible)                                      |
-| **Target Audience**           | Enterprises needing certified vendor support                                         | Users/orgs wanting RHEL compatibility without cost                              |
-| **Security**                  | Certified security patches, compliance tools (FIPS, DISA STIG, etc.)                 | Security patches synced from RHEL sources; not vendor-certified                 |
-| **Ecosystem & Certification** | Widely certified by software/hardware vendors (Oracle, SAP, IBM, Dell, VMware, etc.) | Not officially certified, but works with same ecosystem                         |
-| **Release Cycle**             | Regular releases with **10+ years support** per version                              | Mirrors RHEL release cycle; support from community & partners                   |
-| **Cost**                      | Paid subscription (varies by tier, nodes, support level)                             | Free; optional paid support available                                           |
+<div style="width:60%;">
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Red Hat Enterprise Linux (RHEL)</th>
+      <th>Rocky Linux</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Origin</strong></td>
+      <td>Developed and maintained by <strong>Red Hat (IBM-owned)</strong></td>
+      <td>Community-driven rebuild</td>
+    </tr>
+    <tr>
+      <td><strong>License</strong></td>
+      <td>Commercial, subscription required for updates & support</td>
+      <td>Free and open-source, no subscription required</td>
+    </tr>
+    <tr>
+          <td><strong>Support</strong></td>
+      <td>Paid enterprise support from Red Hat</td>
+      <td>Community support</td>
+            <tr>
+          <td><strong>Security</strong></td>
+      <td> Certified security patches</td>
+      <td> Security patches synced from RHEL sources</td>
+    </tr>
+                <tr>
+          <td><strong>Ecosystem</strong></td>
+      <td> Widely certified by software/hardware vendors</td>
+      <td> Not officially certified, but works with same ecosystem </td>
+    </tr>
+                    <tr>
+          <td><strong>Cost</strong></td>
+      <td> Paid subscription</td>
+      <td> Free; optional paid support available   </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Files and File System
 
