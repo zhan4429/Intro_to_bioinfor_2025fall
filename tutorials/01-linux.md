@@ -2,6 +2,17 @@
 
 Linux is a free, open-source, and Unix-like operating system kernel that was originally created by **Linus Torvalds** in 1991. Over time, Linux has grown into a full-fledged operating system used worldwide across various types of devices, from servers and desktop computers to smartphones and embedded systems.
 
+<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
+  <h5>GNU/Linux</h5>
+  <p>
+    by <a href="https://www.stallman.org">Richard Stallman</a><br>
+    Many computer users run a modified version of the GNU system every day, without realizing it. 
+    Through a peculiar turn of events, the version of GNU which is widely used today is often 
+    called “Linux,” and many of its users are not aware that it is basically the GNU system, 
+    developed by the GNU Project.
+  </p>
+</div>
+
 ### Popular Linux Distributions
 
 ​ • **Ubuntu:** A user-friendly distribution popular for desktop and server use, based on Debian.
