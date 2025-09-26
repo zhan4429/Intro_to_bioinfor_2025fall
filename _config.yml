@@ -3,6 +3,7 @@ description: "Bioinformatics workshop provided by Tufts Research Technology"
 
 plugins:
   - jekyll-relative-links
+  - jekyll-toc
 relative_links:
   enabled: true
   collections: true

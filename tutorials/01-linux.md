@@ -1,3 +1,6 @@
+- TOC
+  {:toc}
+
 # What is Linux?
 
 Linux is a free, open-source, and Unix-like operating system kernel that was originally created by **Linus Torvalds** in 1991. Over time, Linux has grown into a full-fledged operating system used worldwide across various types of devices, from servers and desktop computers to smartphones and embedded systems.
@@ -20,7 +23,7 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 ### Our clusters' OS
 
-<img src="img/os.png" alt="OS upgrade" width=600>
+<img src="img/os.png" alt="OS upgrade" width=800>
 
 | Feature                       | Red Hat Enterprise Linux (RHEL)                                                      | Rocky Linux                                                                     |
 | ----------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
@@ -62,7 +65,7 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 ### File permissions
 
-<img src="https://i.imgur.com/yxNrpKJ.png" width="600">
+<img src="https://i.imgur.com/yxNrpKJ.png" width="800">
 
 ### File organization
 
