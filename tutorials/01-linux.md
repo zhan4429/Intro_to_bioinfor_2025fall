@@ -1,7 +1,7 @@
 ## What is Linux?
 
 <div style="overflow: auto;">
-  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2F20140718104350-73262741-gnu-linux-free-software-and-the-society&psig=AOvVaw3De3Iw00jm6TUZ-E9Qmk-K&ust=1759002798115000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCMDf7vyZ948DFQAAAAAdAAAAABAE"
+  <img src="img/gnu.jpeg"
        alt="Linux Logo"
        style="float: left; margin-right: 15px; width: 150px; height: auto;">
   
