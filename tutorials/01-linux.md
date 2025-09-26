@@ -22,8 +22,6 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 <img src="img/os.png" alt="OS upgrade" width=800>
 
-<div style="width:60%;">
-
 <table>
   <thead>
     <tr>
