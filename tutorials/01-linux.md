@@ -3,7 +3,7 @@
 <div style="overflow: auto;">
   <img src="img/gnu.jpeg"
        alt="Linux Logo"
-       style="float: left; margin-right: 15px; width: 150px; height: auto;">
+       style="float: left; margin-right: 15px; width: 400px; height: auto;">
   
   <p>
     Linux is a free, open-source, and Unix-like operating system kernel that was originally 
@@ -13,7 +13,7 @@
   </p>
 </div>
 
-<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
+<div style="padding: 5px; margin-bottom: 0; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
   <h5>GNU/Linux</h5>
   <p>
     by <a href="https://www.stallman.org">Richard Stallman</a><br>
