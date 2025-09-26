@@ -508,6 +508,8 @@ A pipe is represented by the `|` symbol. When you place a pipe between two comma
 command1 | command2
 ```
 
+###### Example
+
 ```
 $ sort file.txt | uniq
 ```
