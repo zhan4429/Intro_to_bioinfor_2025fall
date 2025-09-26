@@ -1,7 +1,7 @@
-- TOC
-  {:toc}
-
 # What is Linux?
+
+\* TOC
+{:toc}
 
 Linux is a free, open-source, and Unix-like operating system kernel that was originally created by **Linus Torvalds** in 1991. Over time, Linux has grown into a full-fledged operating system used worldwide across various types of devices, from servers and desktop computers to smartphones and embedded systems.
 
