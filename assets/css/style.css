@@ -44,7 +44,7 @@ h4 {
 }
 
 h5 {
-  color: black;
+  color: #9aa4b5;
   font-size: 1.75rem;
 }
 
@@ -54,7 +54,7 @@ h6 {
 }
 
 table {
-  width: 60%;
+  width: 80%;
   margin: 30px 20px;
   text-align: left;
   border-collapse: separate;
