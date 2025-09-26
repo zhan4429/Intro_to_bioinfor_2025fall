@@ -15,7 +15,7 @@
 
 <div style="padding: 5px; margin-bottom: 0; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
   <h5 style="margin-top:0; margin-bottom:0">GNU/Linux</h5>
-  <p>
+  <p style="margin-bottom:0">
     by <a href="https://www.stallman.org">Richard Stallman</a><br>
     Many computer users run a modified version of the GNU system every day, without realizing it. 
     Through a peculiar turn of events, the version of GNU which is widely used today is often 
@@ -92,7 +92,7 @@
 
 **A file is an addressable location that contains some data which can take many forms.**
 
-<div style="display: flex; align-items: flex-start; gap: 20px;">
+<div style="display: flex; align-items: flex-start; gap: 0px;">
   <div style="flex: 1;">
     <ul>
       <li>Text data</li>
@@ -116,7 +116,7 @@
   </div>
 
   <div style="flex: 1; text-align: center;">
-    <img src="https://i.imgur.com/yxNrpKJ.png" width="100%" style="max-width: 800px;">
+    <img src="https://i.imgur.com/yxNrpKJ.png" width="100%" style="max-width: 1000px;">
   </div>
 </div>
 
