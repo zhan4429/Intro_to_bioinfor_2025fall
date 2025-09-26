@@ -1,5 +1,6 @@
-**Yucheng Zhang**, _Senior Bioinformatics Engineer_
 **Shirley Li**, _Bioinformatician_
+
+**Yucheng Zhang**, _Senior Bioinformatics Engineer_
 
 _Tufts Technology Services, Research Technology_
 _October 2, 2025_
