@@ -1,6 +1,17 @@
 ## What is Linux?
 
-Linux is a free, open-source, and Unix-like operating system kernel that was originally created by **Linus Torvalds** in 1991. Over time, Linux has grown into a full-fledged operating system used worldwide across various types of devices, from servers and desktop computers to smartphones and embedded systems.
+<div style="overflow: auto;">
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fpulse%2F20140718104350-73262741-gnu-linux-free-software-and-the-society&psig=AOvVaw3De3Iw00jm6TUZ-E9Qmk-K&ust=1759002798115000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCMDf7vyZ948DFQAAAAAdAAAAABAE"
+       alt="Linux Logo"
+       style="float: left; margin-right: 15px; width: 150px; height: auto;">
+  
+  <p>
+    Linux is a free, open-source, and Unix-like operating system kernel that was originally 
+    created by <strong>Linus Torvalds</strong> in 1991. Over time, Linux has grown into a 
+    full-fledged operating system used worldwide across various types of devices, from servers 
+    and desktop computers to smartphones and embedded systems.
+  </p>
+</div>
 
 <div style="padding: 15px; margin-bottom: 20px; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
   <h5>GNU/Linux</h5>
@@ -27,11 +38,11 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 ​ • **Kali Linux:** A distribution designed for penetration testing and security research.
 
-<img src="https://nixwindows.wordpress.com/wp-content/uploads/2015/02/linux-distro-stickers.png" width="800">
+<img src="https://nixwindows.wordpress.com/wp-content/uploads/2015/02/linux-distro-stickers.png" width="1000">
 
 #### Our clusters' OS
 
-<img src="img/os.png" alt="OS upgrade" width=800>
+<img src="img/os.png" alt="OS upgrade" width=1000>
 
 <table>
   <thead>
