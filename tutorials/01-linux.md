@@ -90,14 +90,14 @@
 
 #### Everything is a file
 
+**A file is an addressable location that contains some data which can take many forms.**
+
 <div style="display: flex; align-items: flex-start; gap: 20px;">
   <div style="flex: 1;">
-    <p><strong>A file is an addressable location that contains some data which can take many forms.</strong></p>
     <ul>
       <li>Text data</li>
       <li>Binary/Image data</li>
     </ul>
-
     <p><strong>Files have associated meta-data</strong></p>
     <ul>
       <li>Owner</li>
@@ -113,13 +113,10 @@
         </ol>
       </li>
     </ul>
-
-    <h4>File permissions</h4>
-
   </div>
 
   <div style="flex: 1; text-align: center;">
-    <img src="https://i.imgur.com/yxNrpKJ.png" width="100%" style="max-width: 400px;">
+    <img src="https://i.imgur.com/yxNrpKJ.png" width="100%" style="max-width: 800px;">
   </div>
 </div>
 
