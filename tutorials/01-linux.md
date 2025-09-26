@@ -103,6 +103,7 @@ Files are referred to by their location called **path**
 
 - Relative Path (From my current location)：**user01**
 
+<hr>
 ### Must-known Linux/Unix Tools
 
 #### man: manual pages
@@ -300,7 +301,7 @@ $ ncdu ~
 $ ncdu /cluster/tufts/mylab
 ```
 
-<img src="img/ncdu.png" width="600">
+<img src="img/ncdu.png" width="800">
 
 ##### df: check disk space
 

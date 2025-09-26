@@ -1,3 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: bottom 50px;
+code,
+pre {
+  /* This "font stack" tries Fira Code first, then common system fonts */
+  font-family: "Fira Code", Menlo, Monaco, "Courier New", monospace;
+
+  /* This optional line enables the programming ligatures */
+  font-variant-ligatures: contextual;
+}
+
 h1 {
   color: #3287a8;
   font-size: 3rem;
@@ -28,6 +43,11 @@ h5 {
   font-size: 1.75rem;
 }
 
+h6 {
+  color: black;
+  font-size: 1.5rem;
+}
+
 table {
   width: 60%;
   margin: 30px 20px;
@@ -38,13 +58,6 @@ table {
 
 th {
   font-size: 1.75rem;
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
 }
 
 body {
