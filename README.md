@@ -1,5 +1,3 @@
-# Getting Started with Bioinformatics on the Tufts HPC
-
 ## Welcome
 
 This workshop is designed to help you get started with bioinformatics on the Tufts High-Performance Computing (HPC) cluster. We will cover:
@@ -11,8 +9,9 @@ This workshop is designed to help you get started with bioinformatics on the Tuf
 
 You will need an [active Tufts HPC account](https://it.tufts.edu/high-performance-computing). If you are new to the HPC, we strongly recommend reviewing our recent [Intro to HPC workshop](https://tufts.zoom.us/rec/play/O1Zm1daWzJdvy2yciGGUwTZCSa1cUyu4wr89gk52-EYE99jr2iWnqgok3RC6QRMPGAvnH85pRvGgVfd8.SJyARyf_p10iqYqH).
 
-> [!TIP]
-> To test your account, try logging in to [Tufts OnDemand](https://ondemand.pax.tufts.edu). If you can log in successfully, you’re all set. If not, please reach out to **tts-research@tufts.edu** for assistance.
+<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
+    <strong>TIP:</strong> To test your account, try logging in to <a href="https://ondemand.pax.tufts.edu">Tufts OnDemand</a>. If you can log in successfully, you’re all set. If not, please reach out to <strong>tts-research@tufts.edu</strong> for assistance.
+</div>
 
 ## Connecting to the Cluster & Starting a Job
 
@@ -31,8 +30,9 @@ To connect, use the `ssh` command with your Tufts UTLN.
   ssh your_utln@login.pax.tufts.edu
   ```
 
-> [!WARNING] > **Do not run jobs on login nodes.**
-> Login nodes are shared resources with limited CPU and memory. They should only be used for light tasks like submitting jobs, managing files, and editing scripts.
+<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #ffeeba; border-radius: 6px; color: #856404; background-color: #fff3cd;">
+<strong>WARNING:</strong> <strong>Do not run jobs on login nodes.</strong> Login nodes are shared resources with limited CPU and memory. They should only be used for light tasks like submitting jobs, managing files, and editing scripts.
+</div>
 
 To start an interactive session on a compute node, use the `srun` command:
 
@@ -47,7 +47,6 @@ This command requests an interactive session with the following resources:
 - `-t2:00:00`: A time limit of 2 hours
 
 <img src="https://it.fysik.su.se/hpc/_images/slurm.png" alt="SLURM cluster architecture diagram">
-*A simplified diagram of cluster architecture.*
 
 ### Using Open OnDemand
 
@@ -61,13 +60,15 @@ You can also access the cluster through a web browser via Open OnDemand.
 - [Introduction to the Linux/Unix Command Line](tutorials/01-linux.md)
 - [Bioinformatics on the Tufts HPC](tutorials/02-bioinfo.md)
 
-> [!NOTE]
-> Access to the new cluster and new Open OnDemand is not enabled by default. To apply for access, you must join the [HPC Upgrade Early Adopter Program](https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU).
+<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #bee5eb; border-radius: 6px; color: #0c5460; background-color: #d1ecf1;">
+<strong>NOTE:</strong> Access to the new cluster and new Open OnDemand is not enabled by default. To apply for access, you must join the <a href="https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU">HPC Upgrade Early Adopter Program</a>.
+</div>
 
 ## Recording
 
-> [!NOTE]
-> A recording of this workshop will be made available after the session.
+<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #bee5eb; border-radius: 6px; color: #0c5460; background-color: #d1ecf1;">
+<strong>NOTE:</strong> A recording of this workshop will be made available after the session.
+</div>
 
 ## Upcoming Research Technology Workshops
 
