@@ -22,6 +22,19 @@ Linux is a free, open-source, and Unix-like operating system kernel that was ori
 
 <img src="img/os.png" alt="OS upgrade" width=600>
 
+| Feature                       | Red Hat Enterprise Linux (RHEL)                                                      | Rocky Linux                                                                     |
+| ----------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- |
+| **Origin**                    | Developed and maintained by **Red Hat (IBM-owned)**                                  | Community-driven rebuild, founded by **Gregory Kurtzer** (co-founder of CentOS) |
+| **License**                   | Commercial, subscription required for updates & support                              | Free and open-source, no subscription required                                  |
+| **Support**                   | Paid enterprise support from Red Hat                                                 | Community support; optional commercial support via CIQ and others               |
+| **Updates & Patches**         | Delivered via Red Hat Customer Portal                                                | Binary-compatible rebuild of RHEL updates, released shortly after RHEL          |
+| **Stability**                 | Enterprise-grade, tested extensively                                                 | Same stability as RHEL (binary-compatible)                                      |
+| **Target Audience**           | Enterprises needing certified vendor support                                         | Users/orgs wanting RHEL compatibility without cost                              |
+| **Security**                  | Certified security patches, compliance tools (FIPS, DISA STIG, etc.)                 | Security patches synced from RHEL sources; not vendor-certified                 |
+| **Ecosystem & Certification** | Widely certified by software/hardware vendors (Oracle, SAP, IBM, Dell, VMware, etc.) | Not officially certified, but works with same ecosystem                         |
+| **Release Cycle**             | Regular releases with **10+ years support** per version                              | Mirrors RHEL release cycle; support from community & partners                   |
+| **Cost**                      | Paid subscription (varies by tier, nodes, support level)                             | Free; optional paid support available                                           |
+
 ## Files and File System
 
 ### Everything is a file
@@ -239,7 +252,7 @@ rm [options] file/directory
 
 ### Storage management
 
-#### ncdu: Disk Usage Analyzer for Linux
+#### ncdu: disk usage analyzer
 
 When your storage space starts running low on an HPC or Linux system, it’s important to figure out which files and folders are using the most space.
 
@@ -258,7 +271,9 @@ $ ncdu ~
 $ ncdu /cluster/tufts/mylab
 ```
 
-#### df: Check Disk Space in Linux
+<img src="img/ncdu.png" width="600">
+
+#### df: check disk space
 
 When working on Linux (especially on shared HPC systems), it’s important to know how much disk space is available on different filesystems.
 The `df` command (disk free) shows this information.
