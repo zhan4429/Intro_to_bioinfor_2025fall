@@ -1,4 +1,4 @@
-# Introduction to Bioinformatics on Tufts HPC
+## Introduction to Bioinformatics on Tufts HPC
 
 Author: Shirley Li, xue.li37@tufts.edu
 
