@@ -5,9 +5,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6;
-  margin: 0 100px; /* This sets top/bottom margin to 0 and left/right to 100px */
-  margin-bottom: 50px; /* This adds the 50px bottom margin you wanted */
-} /* <-- This closing brace was missing */
+  margin: 0 100px; 
+  margin-bottom: 50px;
 
 code,
 pre {
@@ -15,6 +14,11 @@ pre {
   font-family: "Fira Code", Menlo, Monaco, "Courier New", monospace;
   /* This optional line enables the programming ligatures */
   font-variant-ligatures: contextual;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h1 {
