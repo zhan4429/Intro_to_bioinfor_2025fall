@@ -329,9 +329,7 @@ $ ncdu /cluster/tufts/mylab
 ```
 
 <img src="img/ncdu.png" width="800">
-
 ##### df: check disk space
-
 When working on Linux (especially on shared HPC systems), it’s important to know how much disk space is available on different filesystems.
 The `df` command (disk free) shows this information.
 
@@ -516,12 +514,9 @@ $ cat file1 file2 > files
 ```
 
 - `>>`: Appends the output to the end of an existing file
-
-​ `cat file3 >> files`
-
+  ​ `cat file3 >> files`
 - `<`: Uses the contents of a file as input to a command
-
-​ `sort < names.txt`
+  ​ `sort < names.txt`
 
 ##### Pipe: |
 
@@ -542,19 +537,14 @@ $ sort file.txt | uniq
 ```
 
 - **sort file.txt**: Sorts the lines in file.txt.
-
 - **uniq**: Removes duplicate lines from the sorted output.
 
 ##### Wildcards: selecting multiple files/directories based on patterns
 
 - **\***: Represents zero or more characters:
-
   - **\*.fastq.gz** matches all fastq.gz files
-
 - **?**: Represents a single character:
-
   - **file?.txt** matches "file1.txt", "fileA.txt", but not "file12.txt".
-
 - **[]**: Represents a single character within a specified range or set:
   - **[abc]at** matches "bat", "cat", or "aat".
   - **[0-9]** matches any single digit.
