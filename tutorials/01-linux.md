@@ -3,7 +3,7 @@
 <div style="overflow: auto;">
   <img src="img/gnu.jpeg"
        alt="Linux Logo"
-       style="float: left; margin-right: 15px; width: 400px; height: auto;">
+       style="float: left; margin-right: 15px; width: 300px; height: auto;">
   
   <p>
     Linux is a free, open-source, and Unix-like operating system kernel that was originally 
@@ -14,7 +14,7 @@
 </div>
 
 <div style="padding: 5px; margin-bottom: 0; border: 1px solid #c3e6cb; border-radius: 6px; color: #155724; background-color: #d4edda;">
-  <h5>GNU/Linux</h5>
+  <h5 style="margin-top:0; margin-bottom:0">GNU/Linux</h5>
   <p>
     by <a href="https://www.stallman.org">Richard Stallman</a><br>
     Many computer users run a modified version of the GNU system every day, without realizing it. 
@@ -90,30 +90,38 @@
 
 #### Everything is a file
 
-**A file is an addressable location that contains some data which can take many forms.**
+<div style="display: flex; align-items: flex-start; gap: 20px;">
+  <div style="flex: 1;">
+    <p><strong>A file is an addressable location that contains some data which can take many forms.</strong></p>
+    <ul>
+      <li>Text data</li>
+      <li>Binary/Image data</li>
+    </ul>
 
-- Text data
+    <p><strong>Files have associated meta-data</strong></p>
+    <ul>
+      <li>Owner</li>
+      <li>Group</li>
+      <li>Timestamps</li>
+      <li>
+        Permission:
+        <ol>
+          <li>Read <code>r</code></li>
+          <li>Write <code>w</code></li>
+          <li>Execute <code>x</code></li>
+          <li>No permission <code>-</code></li>
+        </ol>
+      </li>
+    </ul>
 
-- Binary/Image data
+    <h4>File permissions</h4>
 
-**Files have associated meta-data**
+  </div>
 
-- Owner
-
-- Group
-
-- Timestamps
-
-- Permission:
-
-  1. Read r
-  1. Write w
-  1. Execute x
-  1. no permission -
-
-#### File permissions
-
-<img src="https://i.imgur.com/yxNrpKJ.png" width="800">
+  <div style="flex: 1; text-align: center;">
+    <img src="https://i.imgur.com/yxNrpKJ.png" width="100%" style="max-width: 400px;">
+  </div>
+</div>
 
 #### File organization
 
