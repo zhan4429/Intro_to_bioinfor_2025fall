@@ -28,7 +28,7 @@ h6 {
 }
 
 h1 {
-  color: #3287a8;
+  color: #0366fc;
   font-size: 3rem;
   text-decoration: none;
 }
@@ -39,17 +39,17 @@ h1 a {
 }
 
 h2 {
-  color: cadetblue;
+  color: #4079cf;
   font-size: 2.5rem;
 }
 
 h3 {
-  color: turquoise;
+  color: #549dc4;
   font-size: 2.25rem;
 }
 
 h4 {
-  color: lightcyan;
+  color: #6db3a5;
   font-size: 2rem;
 }
 
@@ -75,9 +75,14 @@ th {
   font-size: 1.75rem;
 }
 
+pre {
+  background-color: #f4f4f4; /* gray background for the whole chunk */
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto; /* adds scroll if code is too wide */
+}
+
 code {
-  background-color: #f4f4f4; /* light gray */
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-family: monospace;
+  font-family: "Fira Code", Menlo, Monaco, "Courier New", monospace;
+  font-variant-ligatures: contextual;
 }
