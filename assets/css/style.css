@@ -5,8 +5,9 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   line-height: 1.6;
-  margin: 0 100px; 
+  margin: 0 100px;
   margin-bottom: 50px;
+}
 
 code,
 pre {
@@ -16,7 +17,12 @@ pre {
   font-variant-ligatures: contextual;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -33,17 +39,17 @@ h1 a {
 }
 
 h2 {
-  color: #a86b32;
+  color: cadetblue;
   font-size: 2.5rem;
 }
 
 h3 {
-  color: yellowgreen;
+  color: turquoise;
   font-size: 2.25rem;
 }
 
 h4 {
-  color: lightskyblue;
+  color: lightcyan;
   font-size: 2rem;
 }
 
@@ -69,4 +75,9 @@ th {
   font-size: 1.75rem;
 }
 
-/* The second 'body' rule was removed and its styles were merged above */
+code {
+  background-color: #f4f4f4; /* light gray */
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: monospace;
+}
