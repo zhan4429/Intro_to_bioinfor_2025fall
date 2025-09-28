@@ -2,7 +2,9 @@
 
 Author: Shirley Li, xue.li37@tufts.edu
 
-Date: 2025-10
+Date: 2025-10-02
+
+[TOC]
 
 ## Prerequisites
 
@@ -177,7 +179,7 @@ squeue -u yourusername
 
   
 
-### Run job with GPU node
+### 5 Run job with GPU node
 
 #### Interactive session
 
@@ -191,7 +193,7 @@ You can also specify which gpu node you would like to run jobs on
 srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:a100:1 --pty /bin/bash
 ```
 
-### Submit jobs to queue
+#### Submit jobs to queue
 
 Example script: `align.sh` using parabricks to do the alignment.
 
