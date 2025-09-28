@@ -4,9 +4,9 @@ Author: Shirley Li, xue.li37@tufts.edu
 
 Date: 2025-10-02
 
-[TOC]
 
-## Prerequisites
+
+## 1. Prerequisites
 
 - Basic understanding of biology and bioinformatics
 
@@ -16,7 +16,7 @@ Date: 2025-10-02
 
 - [Access to an HPC cluster](https://it.tufts.edu/researchtechnology.tufts.edu) (e.g., login credentials, necessary software installations)
 
-## Bioinformatics modules
+## 2. Bioinformatics modules
 
 ### On the cluster
 
@@ -56,7 +56,7 @@ Use `module avail` to check the full list of tools available on the cluster. Bel
 
    **If you need to install a less commonly used tool, it's best to handle the installation yourself to ensure proper maintenance. Follow [this tutorial](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/2024_bioinformatics301/01_source/) to install your own tool**
 
-## Using the Open OnDemand App
+## 3. Using the Open OnDemand App
 
 * The current Open OnDemand server is available at [https://ondemand.pax.tufts.edu/](https://ondemand.pax.tufts.edu/)
 * If your account has access to the new cluster, use the [new Open OnDemand server](http://ondemand-prod.pax.tufts.edu)
@@ -99,13 +99,13 @@ We also provide other applications like `Jupyter`, `Matlab server`, `VSCode Serv
 
 - [Quick Start Guide to Using the nf-core Pipeline]()
 
-## Writing a Bioinformatics Job Script
+## 4. Writing a Bioinformatics Job Script
 
 This section introduces how to write a SLURM job script for running bioinformatics workflows. The example uses **`nf-core/rnaseq`**, but the same structure applies to other tools, nf-core pipelines, and custom Nextflow workflows.
 
 The **[nf-core](https://nf-co.re/)** community develops best-practice pipelines using **Nextflow**, a workflow manager for reproducible and scalable analyses across HPC, local, and cloud environments. The **[nf-core/rnaseq](https://nf-co.re/rnaseq/3.21.0/)** pipeline provides a complete solution for RNA-seq data processing, including quality control, alignment, and quantification.
 
-### 1. Prepare the SLURM Script
+### 4.1. Prepare the SLURM Script
 
 Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 
@@ -133,7 +133,7 @@ nextflow run nf-core/rnaseq \
    --outdir results_test/
 ```
 
-### 2. Submitting and Monitoring
+### 4.2. Submitting and Monitoring
 
 If you're running the script **directly in the terminal**, you need to make it executable first:
 
@@ -155,7 +155,7 @@ squeue -u yourusername
 
 #### 
 
-### 3. Outputs and Next Steps
+### 4.3. Outputs and Next Steps
 
 - Results: `results_test/`
 
@@ -165,7 +165,7 @@ squeue -u yourusername
 
   
 
-### 4. Additional Tips
+### 4.4. Additional Tips
 
 - Test commands interactively before adding them to a job script.
 
@@ -179,7 +179,7 @@ squeue -u yourusername
 
   
 
-### 5 Run job with GPU node
+### 4.5. Run job with GPU node
 
 #### Interactive session
 
@@ -246,7 +246,7 @@ sbatch align.sh      # Submits the script to the SLURM queue
 
 Use `squeue -u yourusername` to check job status.
 
-## Additional Resources
+## 5 Additional Resources
 
 ### Datasets
 
