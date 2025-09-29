@@ -109,13 +109,15 @@ In addition to RStudio, Open OnDemand provides several other applications to sup
 - **FastQC** – sequence quality control
 - **Fiji** – image analysis and visualization
 
+
+
 ### Ready-to-Use Genomics Pipelines (nf-core)
 
 [nf-core pipelines](https://nf-co.re/pipelines) are community-developed, standardized workflows for common genomics tasks such as RNA-seq, variant calling, and methylation analysis.
 
 * On the **new Open OnDemand server**, you can go to **nf-core pipelines** to see which pipelines are already installed.
 
-* For step-by-step instructions, see the [Quick Start Guide to Using nf-core Pipelines]().
+* For step-by-step instructions, see the [Previous workshop on nextflow and nf-core](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/nfcore_rnaseq_sp24/00_introduction/).
 
   
 
