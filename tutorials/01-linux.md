@@ -552,3 +552,9 @@ $ sort file.txt | uniq
 - **[]**: Represents a single character within a specified range or set:
   - **[abc]at** matches "bat", "cat", or "aat".
   - **[0-9]** matches any single digit.
+
+## Bandit Wargame: learning Linux commands by playing games
+
+If you’d like extra practice with the Linux command line beyond today’s workshop, I recommend trying the Bandit wargame from [OverTheWire Bandit](https://overthewire.org/wargames/bandit/){:target="\_blank"}.
+
+<img src="bandit.png" width="1000">
