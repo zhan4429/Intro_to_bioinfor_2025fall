@@ -71,15 +71,21 @@ Use `module avail` to check the full list of tools available on the cluster. Bel
 
 When launching RStudio Server, use **R/4.5.1**, which includes the most comprehensive set of pre-installed packages (1300+).
 
-**How to initiate an R job**:
+**How to launch RStudio on Open OnDemand**:
 
 1. Log in to [new Open OnDemand server](http://ondemand-prod.pax.tufts.edu) 
    * Make sure you request access through the [early adopter program](https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU)
 1. Navigate to `interactive apps` and select `RStudio Server`
 1. Specify the required resources:
-   - **Number of hours**
-   - **Number of cores**
-   - **Amount of memory**
+   - **Number of hours** 
+     - **2 hours** → usually enough for testing or small jobs.
+     - **8–12 hours** → good if you plan to work for most of the day and don’t need to continue the same session tomorrow.
+     - For longer runs, it’s often better to use **batch jobs** instead of keeping an interactive session open.
+   - **Number of cores** 
+     - 1 core is fine for most jobs, request more only if your code is **parallelized**
+   - **Amount of memory** 
+     - 4-8Gb is good starting point
+     - Requesting more memory often means longer wait times in the queue
    - **Partition** (set to `batch`)
    - **R version** (latest available: 4.5.1)
 1. Click `Launch` to submit your job to the queue.
@@ -91,15 +97,27 @@ When launching RStudio Server, use **R/4.5.1**, which includes the most comprehe
 
 Refer to our [previous workshop materials](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/2024_bioinformatics301/02_Rpackage/) for detailed instructions on installing R packages.
 
-### Other Apps
 
-We also provide other applications like `Jupyter`, `Matlab server`, `VSCode Server`, `FastQC`, and `Fiji` to support your daily research activities.
 
-### [nf-core pipelines](https://nf-co.re/pipelines)
+### Other Apps on OOD
 
-- On new Open OnDemand server, you can go to `nf-core pipelines` to find out what has been installed.
+In addition to RStudio, Open OnDemand provides several other applications to support your research:
 
-- [Quick Start Guide to Using the nf-core Pipeline]()
+- **Jupyter** – Python notebooks and interactive coding
+- **Matlab Server** – run Matlab directly on the cluster
+- **VS Code Server** – lightweight coding environment
+- **FastQC** – sequence quality control
+- **Fiji** – image analysis and visualization
+
+### Ready-to-Use Genomics Pipelines (nf-core)
+
+[nf-core pipelines](https://nf-co.re/pipelines) are community-developed, standardized workflows for common genomics tasks such as RNA-seq, variant calling, and methylation analysis.
+
+* On the **new Open OnDemand server**, you can go to **nf-core pipelines** to see which pipelines are already installed.
+
+* For step-by-step instructions, see the [Quick Start Guide to Using nf-core Pipelines]().
+
+  
 
 ## 4. Writing a Bioinformatics Job Script
 
