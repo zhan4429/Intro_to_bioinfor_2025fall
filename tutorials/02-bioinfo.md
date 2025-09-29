@@ -119,8 +119,8 @@ In addition to RStudio, Open OnDemand provides several other applications to sup
 
 * For step-by-step instructions, see the [Previous workshop on nextflow and nf-core](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/nfcore_rnaseq_sp24/00_introduction/).
 
-  * 
-
+  * [Slides](https://github.com/tuftsdatalab/tuftsWorkshops/tree/main/docs/2024_workshops/nfcore_rnaseq_sp24/slides)
+  * [Hands-on](https://github.com/tuftsdatalab/tuftsWorkshops/blob/main/docs/2024_workshops/nfcore_rnaseq_sp24/02_rnaseq.md)
   
 
 ## 4. Writing a Bioinformatics Job Script
@@ -130,12 +130,6 @@ This section introduces how to write a SLURM job script for running bioinformati
 The **[nf-core](https://nf-co.re/)** community develops best-practice pipelines using **Nextflow**, a workflow manager for reproducible and scalable analyses across HPC, local, and cloud environments. The **[nf-core/rnaseq](https://nf-co.re/rnaseq/3.21.0/)** pipeline provides a complete solution for RNA-seq data processing, including quality control, alignment, and quantification.
 
 ### 4.1. Prepare the SLURM Script
-
-Refer to previous workshop materials for details about the script. 
-
-* []
-* []
-* []
 
 Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 
