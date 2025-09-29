@@ -1,4 +1,6 @@
-## Introduction to Bioinformatics on Tufts HPC
+## Part II: Bioinfomratics on the Tufts HPC: tools, workflows, and available resources
+
+
 
 Author: Shirley Li, xue.li37@tufts.edu
 
