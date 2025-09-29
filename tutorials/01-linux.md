@@ -1,3 +1,5 @@
+## Part I: Introduction to the Linux/Unix Command Line
+
 **Author:** Yucheng Zhang, [yucheng.zhang@tufts.edu](mailto:yucheng.zhang@tufts.edu)
 
 Date: 10/02/2025
@@ -8,7 +10,7 @@ Date: 10/02/2025
   <img src="img/gnu.jpeg"
        alt="Linux Logo"
        style="float: left; margin-right: 15px; width: 300px; height: auto;">
-  
+
   <p>
     Linux is a free, open-source, and Unix-like operating system kernel that was originally 
     created by <strong>Linus Torvalds</strong> in 1991. Over time, Linux has grown into a 
@@ -30,17 +32,17 @@ Date: 10/02/2025
 
 ### Popular Linux Distributions
 
-​ • **Ubuntu:** A user-friendly distribution popular for desktop and server use, based on Debian.
+ • **Ubuntu:** A user-friendly distribution popular for desktop and server use, based on Debian.
 
-​ • **Fedora:** A cutting-edge distribution often used by developers and those who want the latest features.
+ • **Fedora:** A cutting-edge distribution often used by developers and those who want the latest features.
 
-​ • **Debian:** Known for its stability and extensive software repositories, often used in server environments.
+ • **Debian:** Known for its stability and extensive software repositories, often used in server environments.
 
-​ • **CentOS/AlmaLinux/Rocky Linux:** Enterprise-grade distributions derived from Red Hat Enterprise Linux (RHEL).
+ • **CentOS/AlmaLinux/Rocky Linux:** Enterprise-grade distributions derived from Red Hat Enterprise Linux (RHEL).
 
-​ • **Arch Linux:** A rolling release distribution known for its simplicity and customization, aimed at advanced users.
+ • **Arch Linux:** A rolling release distribution known for its simplicity and customization, aimed at advanced users.
 
-​ • **Kali Linux:** A distribution designed for penetration testing and security research.
+ • **Kali Linux:** A distribution designed for penetration testing and security research.
 
 <img src="https://nixwindows.wordpress.com/wp-content/uploads/2015/02/linux-distro-stickers.png" width="1000">
 

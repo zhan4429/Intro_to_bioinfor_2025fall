@@ -10,8 +10,8 @@ _October 2, 2025_
 
 This workshop is designed to help you get started with bioinformatics on the Tufts High-Performance Computing (HPC) cluster. We will cover:
 
-- Working with bioinformatics tools and workflows on the command line.
-- Discovering the bioinformatics resources and software available on the Tufts HPC.
+- [Introduction to the Linux/Unix Command Line](tutorials/01-linux.md)
+- [Bioinfomratics on the Tufts HPC: tools, workflows, and available resources](tutorials/02-bioinfo.md)
 
 ## Prerequisites
 
@@ -23,7 +23,7 @@ You will need an [active Tufts HPC account](https://it.tufts.edu/high-performanc
 
 ## Connecting to the Cluster & Starting a Job
 
-You can connect to the cluster using a terminal application (like Terminal on macOS or MobaXterm on Windows) or through the web-based Open OnDemand portal.
+You can connect to the cluster either through a terminal application (such as Terminal on macOS or MobaXterm on Windows) or via the web-based Open OnDemand portal.
 
 <div style="padding: 15px; margin-bottom: 20px; border: 1px solid #bee5eb; border-radius: 6px; color: #0c5460; background-color: #d1ecf1;">
 <strong>NOTE:</strong> Access to the new cluster and new Open OnDemand is not enabled by default. To apply for access, you must join the <a href="https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU">HPC Upgrade Early Adopter Program</a>.
@@ -66,11 +66,6 @@ You can also access the cluster through a web browser via Open OnDemand.
 
 - **New Open OnDemand:** [https://ondemand-prod.pax.tufts.edu](https://ondemand-prod.pax.tufts.edu)
 - **Old Open OnDemand:** [https://ondemand.pax.tufts.edu](https://ondemand.pax.tufts.edu)
-
-## Agenda
-
-- [Introduction to the Linux/Unix Command Line](tutorials/01-linux.md)
-- [Bioinformatics on the Tufts HPC](tutorials/02-bioinfo.md)
 
 ## Recording
 

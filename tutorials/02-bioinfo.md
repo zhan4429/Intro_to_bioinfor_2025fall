@@ -1,10 +1,14 @@
-## Introduction to Bioinformatics on Tufts HPC
+## Part II: Bioinfomratics on the Tufts HPC: tools, workflows, and available resources
+
+
 
 Author: Shirley Li, xue.li37@tufts.edu
 
-Date: 2025-10
+Date: 2025-10-02
 
-## Prerequisites
+
+
+## 1. Prerequisites
 
 - Basic understanding of biology and bioinformatics
 
@@ -14,7 +18,7 @@ Date: 2025-10
 
 - [Access to an HPC cluster](https://it.tufts.edu/researchtechnology.tufts.edu) (e.g., login credentials, necessary software installations)
 
-## Bioinformatics modules
+## 2. Bioinformatics modules
 
 ### On the cluster
 
@@ -54,7 +58,7 @@ Use `module avail` to check the full list of tools available on the cluster. Bel
 
    **If you need to install a less commonly used tool, it's best to handle the installation yourself to ensure proper maintenance. Follow [this tutorial](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/2024_bioinformatics301/01_source/) to install your own tool**
 
-## Using the Open OnDemand App
+## 3. Using the Open OnDemand App
 
 * The current Open OnDemand server is available at [https://ondemand.pax.tufts.edu/](https://ondemand.pax.tufts.edu/)
 * If your account has access to the new cluster, use the [new Open OnDemand server](http://ondemand-prod.pax.tufts.edu)
@@ -67,15 +71,21 @@ Use `module avail` to check the full list of tools available on the cluster. Bel
 
 When launching RStudio Server, use **R/4.5.1**, which includes the most comprehensive set of pre-installed packages (1300+).
 
-**How to initiate an R job**:
+**How to launch RStudio on Open OnDemand**:
 
 1. Log in to [new Open OnDemand server](http://ondemand-prod.pax.tufts.edu) 
    * Make sure you request access through the [early adopter program](https://tufts.qualtrics.com/jfe/form/SV_08IS0n1YSTR6KRU)
 1. Navigate to `interactive apps` and select `RStudio Server`
 1. Specify the required resources:
-   - **Number of hours**
-   - **Number of cores**
-   - **Amount of memory**
+   - **Number of hours** 
+     - **2 hours** → usually enough for testing or small jobs.
+     - **8–12 hours** → good if you plan to work for most of the day and don’t need to continue the same session tomorrow.
+     - For longer runs, it’s often better to use **batch jobs** instead of keeping an interactive session open.
+   - **Number of cores** 
+     - 1 core is fine for most jobs, request more only if your code is **parallelized**
+   - **Amount of memory** 
+     - 4-8Gb is good starting point
+     - Requesting more memory often means longer wait times in the queue
    - **Partition** (set to `batch`)
    - **R version** (latest available: 4.5.1)
 1. Click `Launch` to submit your job to the queue.
@@ -87,23 +97,39 @@ When launching RStudio Server, use **R/4.5.1**, which includes the most comprehe
 
 Refer to our [previous workshop materials](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/2024_bioinformatics301/02_Rpackage/) for detailed instructions on installing R packages.
 
-### Other Apps
 
-We also provide other applications like `Jupyter`, `Matlab server`, `VSCode Server`, `FastQC`, and `Fiji` to support your daily research activities.
 
-### [nf-core pipelines](https://nf-co.re/pipelines)
+### Other Apps on OOD
 
-- On new Open OnDemand server, you can go to `nf-core pipelines` to find out what has been installed.
+In addition to RStudio, Open OnDemand provides several other applications to support your research:
 
-- [Quick Start Guide to Using the nf-core Pipeline]()
+- **Jupyter** – Python notebooks and interactive coding
+- **Matlab Server** – run Matlab directly on the cluster
+- **VS Code Server** – lightweight coding environment
+- **FastQC** – sequence quality control
+- **Fiji** – image analysis and visualization
 
-## Writing a Bioinformatics Job Script
+
+
+### Ready-to-Use Genomics Pipelines (nf-core)
+
+[nf-core pipelines](https://nf-co.re/pipelines) are community-developed, standardized workflows for common genomics tasks such as RNA-seq, variant calling, and methylation analysis.
+
+* On the **new Open OnDemand server**, you can go to **nf-core pipelines** to see which pipelines are already installed.
+
+* For step-by-step instructions, see the [Previous workshop on nextflow and nf-core](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/nfcore_rnaseq_sp24/00_introduction/).
+
+  * [Slides](https://github.com/tuftsdatalab/tuftsWorkshops/tree/main/docs/2024_workshops/nfcore_rnaseq_sp24/slides)
+  * [Hands-on](https://github.com/tuftsdatalab/tuftsWorkshops/blob/main/docs/2024_workshops/nfcore_rnaseq_sp24/02_rnaseq.md)
+  
+
+## 4. Writing a Bioinformatics Job Script
 
 This section introduces how to write a SLURM job script for running bioinformatics workflows. The example uses **`nf-core/rnaseq`**, but the same structure applies to other tools, nf-core pipelines, and custom Nextflow workflows.
 
 The **[nf-core](https://nf-co.re/)** community develops best-practice pipelines using **Nextflow**, a workflow manager for reproducible and scalable analyses across HPC, local, and cloud environments. The **[nf-core/rnaseq](https://nf-co.re/rnaseq/3.21.0/)** pipeline provides a complete solution for RNA-seq data processing, including quality control, alignment, and quantification.
 
-### 1. Prepare the SLURM Script
+### 4.1. Prepare the SLURM Script
 
 Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 
@@ -131,7 +157,7 @@ nextflow run nf-core/rnaseq \
    --outdir results_test/
 ```
 
-### 2. Submitting and Monitoring
+### 4.2. Submitting and Monitoring
 
 If you're running the script **directly in the terminal**, you need to make it executable first:
 
@@ -153,7 +179,7 @@ squeue -u yourusername
 
 #### 
 
-### 3. Outputs and Next Steps
+### 4.3. Outputs and Next Steps
 
 - Results: `results_test/`
 
@@ -163,7 +189,7 @@ squeue -u yourusername
 
   
 
-### 4. Additional Tips
+### 4.4. Additional Tips
 
 - Test commands interactively before adding them to a job script.
 
@@ -177,7 +203,7 @@ squeue -u yourusername
 
   
 
-### Run job with GPU node
+### 4.5. Run job with GPU node
 
 #### Interactive session
 
@@ -191,7 +217,7 @@ You can also specify which gpu node you would like to run jobs on
 srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:a100:1 --pty /bin/bash
 ```
 
-### Submit jobs to queue
+#### Submit jobs to queue
 
 Example script: `align.sh` using parabricks to do the alignment.
 
@@ -244,30 +270,23 @@ sbatch align.sh      # Submits the script to the SLURM queue
 
 Use `squeue -u yourusername` to check job status.
 
-## Additional Resources
+## 5 Additional Resources
 
 ### Datasets
 
 In bioinformatics, it’s common to download databases or reference genomes from public websites. For example, performing sequence alignment requires downloading the appropriate reference genome. To simplify this process, we have pre-downloaded and managed several databases/datasets for users. These include:
 
-- [Alphafold2](https://tuftsrt.github.io/guides/dev/bio/databases/doc/alphafold.html)
+- [Alphafold2](https://rtguides.it.tufts.edu/bio/databases/alphafold.html)
+- [Diamond](https://rtguides.it.tufts.edu/bio/databases/diamond.html)
+- [iGenomes](https://rtguides.it.tufts.edu/bio/databases/igenomes.html)
+- [Kraken2](https://rtguides.it.tufts.edu/bio/databases/kraken2.html)
+- [Biobakery](https://rtguides.it.tufts.edu/bio/databases/biobakery.html)
+- [geNomand](https://rtguides.it.tufts.edu/bio/databases/genomad-db.html)
+- [Metaphlan](https://rtguides.it.tufts.edu/bio/databases/metaphlan.html)
+- [Blast Databases](https://rtguides.it.tufts.edu/bio/databases/ncbi.html)
 
-- [NCBI BLAST](https://tuftsrt.github.io/guides/dev/bio/databases/doc/ncbi.html)
+### New user guide
 
-- [Diamond](https://tuftsrt.github.io/guides/dev/bio/databases/doc/diamond.html)
-
-- [iGenomes](https://tuftsrt.github.io/guides/dev/bio/databases/doc/igenomes.html)
-
-- [Kraken2](https://tuftsrt.github.io/guides/dev/bio/databases/doc/kraken2.html)
-
-- [Biobakery](https://tuftsrt.github.io/guides/dev/bio/databases/doc/biobakery.html)
-
-- [geNomand](https://tuftsrt.github.io/guides/dev/bio/databases/doc/genomad_db.html)
-
-- [Metaphlan](https://tuftsrt.github.io/guides/dev/bio/databases/doc/metaphlan.html)
-
-### [New user guide](https://tuftsrt.github.io/guides/dev/bio/index.html)
-
-In early 2025, we launched a new [RT Guides website](https://tuftsrt.github.io/guides/dev/index.html), offering comprehensive resources on a wide range of topics, including but not limited to HPC, data science, and and, **most importantly, [bioinformatics](https://tuftsrt.github.io/guides/dev/bio/index.html)**. We keep up with the latest trends and regularly update our materials to reflect new developments. We highly recommend bookmarking the website and referring to it whenever you encounter challenges. Your feedback is invaluable—let us know if you spot any errors or have suggestions.
+In early 2025, we launched a new [RT Guides website](https://rtguides.it.tufts.edu/index.html), offering comprehensive resources on a wide range of topics, including but not limited to HPC, data science, and and, **most importantly, [bioinformatics](https://rtguides.it.tufts.edu/bio/index.html)**. We keep up with the latest trends and regularly update our materials to reflect new developments. We highly recommend bookmarking the website and referring to it whenever you encounter challenges. Your feedback is invaluable—let us know if you spot any errors or have suggestions.
 
 For updates on bioinformatics education, software, and tools, consider [subscribing](https://elist.tufts.edu/sympa/info/best) to our e-list: [best@elist.tufts.edu](mailto:best@elist.tufts.edu).
