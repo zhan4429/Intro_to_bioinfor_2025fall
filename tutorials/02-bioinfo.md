@@ -119,6 +119,8 @@ In addition to RStudio, Open OnDemand provides several other applications to sup
 
 * For step-by-step instructions, see the [Previous workshop on nextflow and nf-core](https://tuftsdatalab.github.io/tuftsWorkshops/2024_workshops/nfcore_rnaseq_sp24/00_introduction/).
 
+  * 
+
   
 
 ## 4. Writing a Bioinformatics Job Script
@@ -128,6 +130,12 @@ This section introduces how to write a SLURM job script for running bioinformati
 The **[nf-core](https://nf-co.re/)** community develops best-practice pipelines using **Nextflow**, a workflow manager for reproducible and scalable analyses across HPC, local, and cloud environments. The **[nf-core/rnaseq](https://nf-co.re/rnaseq/3.21.0/)** pipeline provides a complete solution for RNA-seq data processing, including quality control, alignment, and quantification.
 
 ### 4.1. Prepare the SLURM Script
+
+Refer to previous workshop materials for details about the script. 
+
+* []
+* []
+* []
 
 Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 
@@ -274,24 +282,17 @@ Use `squeue -u yourusername` to check job status.
 
 In bioinformatics, it’s common to download databases or reference genomes from public websites. For example, performing sequence alignment requires downloading the appropriate reference genome. To simplify this process, we have pre-downloaded and managed several databases/datasets for users. These include:
 
-- [Alphafold2](https://tuftsrt.github.io/guides/dev/bio/databases/doc/alphafold.html)
+- [Alphafold2](https://rtguides.it.tufts.edu/bio/databases/alphafold.html)
+- [Diamond](https://rtguides.it.tufts.edu/bio/databases/diamond.html)
+- [iGenomes](https://rtguides.it.tufts.edu/bio/databases/igenomes.html)
+- [Kraken2](https://rtguides.it.tufts.edu/bio/databases/kraken2.html)
+- [Biobakery](https://rtguides.it.tufts.edu/bio/databases/biobakery.html)
+- [geNomand](https://rtguides.it.tufts.edu/bio/databases/genomad-db.html)
+- [Metaphlan](https://rtguides.it.tufts.edu/bio/databases/metaphlan.html)
+- [Blast Databases](https://rtguides.it.tufts.edu/bio/databases/ncbi.html)
 
-- [NCBI BLAST](https://tuftsrt.github.io/guides/dev/bio/databases/doc/ncbi.html)
+### New user guide
 
-- [Diamond](https://tuftsrt.github.io/guides/dev/bio/databases/doc/diamond.html)
-
-- [iGenomes](https://tuftsrt.github.io/guides/dev/bio/databases/doc/igenomes.html)
-
-- [Kraken2](https://tuftsrt.github.io/guides/dev/bio/databases/doc/kraken2.html)
-
-- [Biobakery](https://tuftsrt.github.io/guides/dev/bio/databases/doc/biobakery.html)
-
-- [geNomand](https://tuftsrt.github.io/guides/dev/bio/databases/doc/genomad_db.html)
-
-- [Metaphlan](https://tuftsrt.github.io/guides/dev/bio/databases/doc/metaphlan.html)
-
-### [New user guide](https://tuftsrt.github.io/guides/dev/bio/index.html)
-
-In early 2025, we launched a new [RT Guides website](https://tuftsrt.github.io/guides/dev/index.html), offering comprehensive resources on a wide range of topics, including but not limited to HPC, data science, and and, **most importantly, [bioinformatics](https://tuftsrt.github.io/guides/dev/bio/index.html)**. We keep up with the latest trends and regularly update our materials to reflect new developments. We highly recommend bookmarking the website and referring to it whenever you encounter challenges. Your feedback is invaluable—let us know if you spot any errors or have suggestions.
+In early 2025, we launched a new [RT Guides website](https://rtguides.it.tufts.edu/index.html), offering comprehensive resources on a wide range of topics, including but not limited to HPC, data science, and and, **most importantly, [bioinformatics](https://rtguides.it.tufts.edu/bio/index.html)**. We keep up with the latest trends and regularly update our materials to reflect new developments. We highly recommend bookmarking the website and referring to it whenever you encounter challenges. Your feedback is invaluable—let us know if you spot any errors or have suggestions.
 
 For updates on bioinformatics education, software, and tools, consider [subscribing](https://elist.tufts.edu/sympa/info/best) to our e-list: [best@elist.tufts.edu](mailto:best@elist.tufts.edu).
