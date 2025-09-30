@@ -202,8 +202,6 @@ squeue -u yourusername
 
 - Logs: `rnaseq.<jobID>.out`, `rnaseq.<jobID>.err`, `.nextflow.log`
 
-- For real data, replace `-profile test` with `--input samplesheet.csv` and appropriate genome or reference files, adjusting resource requests as needed.
-
   
 
 ### 4.4. Additional Tips
@@ -214,9 +212,7 @@ squeue -u yourusername
 
 - Review SLURM output (`.out`) and error (`.err`) files, as well as `.nextflow.log`, for troubleshooting.
 
-- Keep job scripts modular—reuse the same template for different nf-core pipelines by changing only the `nextflow run` command and parameters.
-
-- Start with small test runs (e.g., `-profile test`) before scaling up to full datasets.
+- Start with small test runs before scaling up to full datasets.
 
   
 
