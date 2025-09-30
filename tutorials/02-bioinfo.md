@@ -136,25 +136,42 @@ Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 ```
 #!/bin/bash
 #SBATCH -J RNASEQ_JOB           # Job name
-#SBATCH --time=02:00:00         # Maximum runtime (D-HH:MM:SS format)
+#SBATCH --time=12:00:00         # Maximum runtime (D-HH:MM:SS format)
 #SBATCH -p batch                # Partition (queue) to submit the job to
 #SBATCH -n 1                    # Number of tasks (1 task in this case)
 #SBATCH --mem=16g               # Memory allocation (32 GB)
-#SBATCH --cpus-per-task=4       # Number of CPU cores allocated for the task
-#SBATCH --output=rnaseq.%j.out  # Standard output file (%j = Job ID)
-#SBATCH --error=rnaseq.%j.err   # Standard error file (%j = Job ID)
+#SBATCH --cpus-per-task=2       # CPU cores per task 
+#SBATCH --output=%x-%J-%u.out
+#SBATCH --error=%x-%J-%u.err
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=XXX@tufts.edu
 
 # Load Nextflow (adjust module name to your system)
 module load nextflow/25.04.0
 module load singularity/4.3.1
 
+
+# Set Singularity cache directory
+# NOTE: Do not use $HOME for caching images.
+# Use the system-wide cache if running nf-core pipelines managed by admins:
+# export NXF_SINGULARITY_CACHEDIR=/cluster/tufts/biocontainers/nf-core/singularity-images
+# Or set to your own directory if running custom pipelines.
+
+export NXF_SINGULARITY_CACHEDIR=/cluster/tufts/biocontainers/nf-core/singularity-images
+
 # Create output directory
 mkdir -p results_test
 
-# Run nf-core/rnaseq in test mode
+# Run nf-core RNA-seq pipeline
 nextflow run nf-core/rnaseq \
-   -profile test,singularity,slurm \
-   --outdir results_test/
+    -r 3.21.0 \
+    --input samplesheet.csv \
+    --outdir results_test \
+    --fasta ref.fasta \
+    --gtf ref.gtf \
+    --aligner star_salmon \
+    -profile tufts
+
 ```
 
 ### 4.2. Submitting and Monitoring
@@ -177,7 +194,7 @@ Use the following command to check the job status:
 squeue -u yourusername
 ```
 
-#### 
+
 
 ### 4.3. Outputs and Next Steps
 
