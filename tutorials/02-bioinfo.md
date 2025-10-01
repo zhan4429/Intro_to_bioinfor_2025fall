@@ -303,3 +303,5 @@ In bioinformatics, it’s common to download databases or reference genomes from
 In early 2025, we launched a new [RT Guides website](https://rtguides.it.tufts.edu/index.html), offering comprehensive resources on a wide range of topics, including but not limited to HPC, data science, and and, **most importantly, [bioinformatics](https://rtguides.it.tufts.edu/bio/index.html)**. We keep up with the latest trends and regularly update our materials to reflect new developments. We highly recommend bookmarking the website and referring to it whenever you encounter challenges. Your feedback is invaluable—let us know if you spot any errors or have suggestions.
 
 For updates on bioinformatics education, software, and tools, consider [subscribing](https://elist.tufts.edu/sympa/info/best) to our e-list: [best@elist.tufts.edu](mailto:best@elist.tufts.edu).
+
+For individual consultations or support, please email: tts-research@tufts.edu
