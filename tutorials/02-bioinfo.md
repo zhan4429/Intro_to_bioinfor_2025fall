@@ -135,7 +135,7 @@ Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 
 ```
 #!/bin/bash
-#SBATCH -J RNASEQ_JOB           # Job name
+#SBATCH -J rnaseq           # Job name
 #SBATCH --time=12:00:00         # Maximum runtime (D-HH:MM:SS format)
 #SBATCH -p batch                # Partition (queue) to submit the job to
 #SBATCH -n 1                    # Number of tasks (1 task in this case)
@@ -200,7 +200,7 @@ squeue -u yourusername
 
 - Results: `results_test/`
 
-- Logs: `rnaseq.<jobID>.out`, `rnaseq.<jobID>.err`, `.nextflow.log`
+- Logs: `rnaseq.<jobID>.out`, `rnaseq.<jobID>.err`
 
   
 
@@ -232,7 +232,7 @@ srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:a100:1 --pty /bin/bash
 
 #### Submit jobs to queue
 
-Example script: `align.sh` using parabricks to do the alignment.
+Example script: `align.sh` using [parabricks](https://docs.nvidia.com/clara/parabricks/3.8.0/documentation/tooldocs/man_fq2bam.html) to do the alignment.
 
 ```
 #!/bin/bash
