@@ -45,7 +45,6 @@ Use `module avail` to check the full list of tools available on the cluster. Bel
    beast2/2.6.4                         mirge3/0.1.4                               qiime2/2023.9
    beast2/2.6.6                  (D)    mothur/1.46.0                              qiime2/2024.2
    ... ...
-
 ```
 
 ### A few tips
@@ -138,6 +137,7 @@ Create a file named `run_nfcore_rnaseq.sh` and add the following content:
 #SBATCH -J rnaseq           # Job name
 #SBATCH --time=12:00:00         # Maximum runtime (D-HH:MM:SS format)
 #SBATCH -p batch                # Partition (queue) to submit the job to
+#SBATCH -N 1                    # Number of nodes 
 #SBATCH -n 1                    # Number of tasks (1 task in this case)
 #SBATCH --mem=16g               # Memory allocation (32 GB)
 #SBATCH --cpus-per-task=2       # CPU cores per task 
@@ -171,7 +171,6 @@ nextflow run nf-core/rnaseq \
     --gtf ref.gtf \
     --aligner star_salmon \
     -profile tufts
-
 ```
 
 ### 4.2. Submitting and Monitoring
@@ -221,13 +220,13 @@ squeue -u yourusername
 #### Interactive session
 
 ```
-srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:1 --pty /bin/bash
+srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:1 --pty bash
 ```
 
 You can also specify which gpu node you would like to run jobs on
 
 ```
-srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:a100:1 --pty /bin/bash
+srun -p preempt -n 1 --time=04:00:00 --mem=20G --gres=gpu:a100:1 --pty bash
 ```
 
 #### Submit jobs to queue
@@ -239,7 +238,8 @@ Example script: `align.sh` using [parabricks](https://docs.nvidia.com/clara/para
 #SBATCH -J fq2bam_alignment          # Job name
 #SBATCH -p preempt                   # Submit to the 'preempt' partition (modify based on your cluster setup)
 #SBATCH --gres=gpu:1                 # Request 1 GPU for accelerated processing
-#SBATCH -n 2                         # Number of tasks (2 in this case)
+#SBATCH -N 1                         # Number of nodes
+#SBATCH -n 1                         # Number of tasks (1 in this case)
 #SBATCH --mem=60g                    # Memory allocation (60GB)
 #SBATCH --time=02:00:00              # Maximum job run time (2 hours)
 #SBATCH --cpus-per-task=20           # Number of CPU cores allocated per task
@@ -270,8 +270,6 @@ pbrun fq2bam \
     --knownSites ${known_sites_vcf} \          # Known sites for BQSR
     --out-bam ${output_bam} \                  # Output BAM file
     --out-recal-file ${output_bqsr_report}     # Output Base Quality Score Recalibration (BQSR) report
-
-
 ```
 
 Here is the command to submit job
