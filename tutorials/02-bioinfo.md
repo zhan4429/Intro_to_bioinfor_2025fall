@@ -151,11 +151,15 @@ module load nextflow/25.04.0
 module load singularity/4.3.1
 
 
-# Set Singularity cache directory
-# NOTE: Do not use $HOME for caching images.
-# Use the system-wide cache if running nf-core pipelines managed by admins:
-# export NXF_SINGULARITY_CACHEDIR=/cluster/tufts/biocontainers/nf-core/singularity-images
-# Or set to your own directory if running custom pipelines.
+# Configure Singularity cache directory
+# IMPORTANT: Do not use $HOME for caching images, as it can quickly fill your quota.
+#
+# Instead, set NXF_SINGULARITY_CACHEDIR to a shared/group directory
+# (e.g., your lab’s research storage). This ensures cached images
+# are available across workflows and prevents $HOME from running out of space.
+#
+# Example:
+# export NXF_SINGULARITY_CACHEDIR=/cluster/tufts/yourlab/yourUTLN/nf-core/singularity-images
 
 # Create output directory
 mkdir -p results_test
