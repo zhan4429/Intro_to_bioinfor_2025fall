@@ -157,8 +157,6 @@ module load singularity/4.3.1
 # export NXF_SINGULARITY_CACHEDIR=/cluster/tufts/biocontainers/nf-core/singularity-images
 # Or set to your own directory if running custom pipelines.
 
-export NXF_SINGULARITY_CACHEDIR=/cluster/tufts/biocontainers/nf-core/singularity-images
-
 # Create output directory
 mkdir -p results_test
 
