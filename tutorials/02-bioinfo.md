@@ -106,7 +106,7 @@ In addition to RStudio, Open OnDemand provides several other applications to sup
 - **Matlab Server** – run Matlab directly on the cluster
 - **VS Code Server** – lightweight coding environment
 - **FastQC** – sequence quality control
-- **Fiji** – image analysis and visualization
+- **AlphaFold** – protein structure prediction
 
 
 
