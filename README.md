@@ -69,9 +69,7 @@ You can also access the cluster through a web browser via Open OnDemand.
 
 ## Recording
 
-<div style="padding: 15px; margin-bottom: 20px; border: 1px solid #bee5eb; border-radius: 6px; color: #0c5460; background-color: #d1ecf1;">
-<strong>NOTE:</strong> A recording of this workshop will be made available after the session.
-</div>
+[Getting started with bioinformatics - 2025 Fall](https://tufts.box.com/s/iuv6kutscc5uj10h5ki7mfhlbd7m7qdi)
 
 ## Upcoming Research Technology Workshops
 
